@@ -3,8 +3,8 @@ import { paginationHelpers } from "../../../helpers/paginationHelper";
 import { IGenericResponse } from "../../../interfaces/common";
 import { IPaginationOptions } from "../../../interfaces/pagination";
 import prisma from "../../../shared/prisma";
-import { AcademicSemesterSearchAbleFields } from "./academicSemester.constants";
-import { IAcademicSemesterFilterRequest } from "./academicSemester.interface";
+import { IAcademicSemeterFilterRequest } from "./academicSemester.interface";
+import { AcademicSemesterSearchAbleFields } from "./academicSemeter.contants";
 
 
 const insertIntoDB = async (academicSemesterData: AcademicSemester): Promise<AcademicSemester> => {
@@ -16,12 +16,12 @@ const insertIntoDB = async (academicSemesterData: AcademicSemester): Promise<Aca
 }
 
 const getAllFromDB = async (
-    filters: IAcademicSemesterFilterRequest,
+    filters: IAcademicSemeterFilterRequest,
     options: IPaginationOptions
 ): Promise<IGenericResponse<AcademicSemester[]>> => {
     const { page, limit, skip } = paginationHelpers.calculatePagination(options);
     const { searchTerm, ...filterData } = filters;
-    // console.log(options)
+    console.log(options)
     const andConditons = [];
 
     if (searchTerm) {
@@ -44,8 +44,6 @@ const getAllFromDB = async (
             }))
         })
     }
-
-    // console.log(andConditons)
 
     /**
      * person = { name: 'fahim' }
@@ -90,6 +88,7 @@ const getDataById = async (id: string): Promise<AcademicSemester | null> => {
 
     return result;
 }
+
 
 export const AcademicSemesterService = {
     insertIntoDB,
