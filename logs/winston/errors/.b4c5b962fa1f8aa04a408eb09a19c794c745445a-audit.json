@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\.b4c5b962fa1f8aa04a408eb09a19c794c745445a-audit.json",
+    "files": [
+        {
+            "date": 1731302850301,
+            "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-11-11-11-error.log",
+            "hash": "6b56463654f133d728964e7c86fe865ac7a42e5a01d61a160625414e29c606a8"
+        }
+    ],
+    "hashType": "sha256"
+}
