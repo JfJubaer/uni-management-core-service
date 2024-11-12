@@ -1,3 +1,6 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -8,15 +11,16 @@ datasource db {
 }
 
 model AcademicSemester {
-  id         String    @id @default(uuid())
-  year       Int
-  title      String
-  code       String
-  startMonth String
-  endMonth   String
-  createdAt  DateTime  @default(now())
-  updatedAt  DateTime  @updatedAt
-  students   Student[]
+  id                    String                 @id @default(uuid())
+  year                  Int
+  title                 String
+  code                  String
+  startMonth            String
+  endMonth              String
+  createdAt             DateTime               @default(now())
+  updatedAt             DateTime               @updatedAt
+  students              Student[]
+  semesterRegistrations SemesterRegistration[]
 
   @@map("academic_semesters")
 }
@@ -27,66 +31,73 @@ model AcademicFaculty {
   createdAt           DateTime             @default(now())
   updatedAt           DateTime             @updatedAt
   academicDepartments AcademicDepartment[]
-  faculties           Faculty[]
   students            Student[]
+  faculties           Faculty[]
 
   @@map("academic_faculty")
 }
 
 model AcademicDepartment {
-  id                String          @id @default(uuid())
-  title             String
-  createdAt         DateTime        @default(now())
-  updatedAt         DateTime        @updatedAt
-  academicFacultyId String
+  id        String   @id @default(uuid())
+  title     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
   academicFaculty   AcademicFaculty @relation(fields: [academicFacultyId], references: [id])
-  faculties         Faculty[]
+  academicFacultyId String
   students          Student[]
+  faculties         Faculty[]
 
   @@map("academic_departments")
 }
 
 model Student {
-  id                   String             @id @default(uuid())
-  studentId            String
-  firstName            String
-  lastName             String
-  middleName           String
-  profileImage         String
-  email                String
-  contactNo            String
-  gender               String
-  bloodGroup           String
-  createdAt            DateTime           @default(now())
-  updatedAt            DateTime           @updatedAt
-  academicSemesterId   String
-  academicDepartmentId String
-  academicFacultyId    String
+  id           String   @id @default(uuid())
+  studentId    String
+  firstName    String
+  lastName     String
+  middleName   String
+  profileImage String
+  email        String
+  contactNo    String
+  gender       String
+  bloodGroup   String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  academicSemester   AcademicSemester @relation(fields: [academicSemesterId], references: [id])
+  academicSemesterId String
+
   academicDepartment   AcademicDepartment @relation(fields: [academicDepartmentId], references: [id])
-  academicFaculty      AcademicFaculty    @relation(fields: [academicFacultyId], references: [id])
-  academicSemester     AcademicSemester   @relation(fields: [academicSemesterId], references: [id])
+  academicDepartmentId String
+
+  academicFaculty   AcademicFaculty @relation(fields: [academicFacultyId], references: [id])
+  academicFacultyId String
 
   @@map("students")
 }
 
 model Faculty {
-  id                   String             @id @default(uuid())
-  facultyId            String
-  firstName            String
-  lastName             String
-  middleName           String
-  profileImage         String
-  email                String
-  contactNo            String
-  gender               String
-  bloodGroup           String
-  designation          String
-  createdAt            DateTime           @default(now())
-  updatedAt            DateTime           @updatedAt
-  academicDepartmentId String
-  academicFacultyId    String
+  id           String   @id @default(uuid())
+  facultyId    String
+  firstName    String
+  lastName     String
+  middleName   String
+  profileImage String
+  email        String
+  contactNo    String
+  gender       String
+  bloodGroup   String
+  designation  String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
   academicDepartment   AcademicDepartment @relation(fields: [academicDepartmentId], references: [id])
-  academicFaculty      AcademicFaculty    @relation(fields: [academicFacultyId], references: [id])
+  academicDepartmentId String
+
+  academicFaculty   AcademicFaculty @relation(fields: [academicFacultyId], references: [id])
+  academicFacultyId String
+  courses           CourseFaculty[]
 
   @@map("faculties")
 }
@@ -122,6 +133,7 @@ model Course {
   updatedAt       DateTime               @updatedAt
   preRequisite    CourseToPrerequisite[] @relation("CourseToPrerequisite")
   preRequisiteFor CourseToPrerequisite[] @relation("PrerequisiteToCourse")
+  faculties       CourseFaculty[]
 
   @@map("courses")
 }
@@ -136,3 +148,34 @@ model CourseToPrerequisite {
   @@id([courseId, preRequisiteId])
 }
 
+model CourseFaculty {
+  courseId String
+  course   Course @relation(fields: [courseId], references: [id])
+
+  facultyId String
+  faculty   Faculty @relation(fields: [facultyId], references: [id])
+
+  @@id([courseId, facultyId])
+  @@map("course_faculties")
+}
+
+model SemesterRegistration {
+  id                 String                      @id @default(uuid())
+  startDate          DateTime
+  endDate            DateTime
+  status             SemesterRegistrationStatus? @default(UPCOMING)
+  minCredit          Int                         @default(0)
+  maxCredit          Int                         @default(0)
+  createdAt          DateTime                    @default(now())
+  updatedAt          DateTime                    @updatedAt
+  academicSemesterId String
+  academicSemester   AcademicSemester            @relation(fields: [academicSemesterId], references: [id])
+
+  @@map("semester_registrations")
+}
+
+enum SemesterRegistrationStatus {
+  UPCOMING
+  ONGOING
+  ENDED
+}
