@@ -6,31 +6,6 @@
     "auditLog": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\.b4c5b962fa1f8aa04a408eb09a19c794c745445a-audit.json",
     "files": [
         {
-            "date": 1731302850301,
-            "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-11-11-11-error.log",
-            "hash": "6b56463654f133d728964e7c86fe865ac7a42e5a01d61a160625414e29c606a8"
-        },
-        {
-            "date": 1731413197997,
-            "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-12-11-18-error.log",
-            "hash": "d35ca3dad76d2129c8d44d23b5920a2a2499566b447a7a574dd3dbe4a683712c"
-        },
-        {
-            "date": 1731429367083,
-            "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-12-11-22-error.log",
-            "hash": "81837ca5aaf149f044e7e7ac7fb163b1348b3396debcd3c3a18c21b8dbcf6644"
-        },
-        {
-            "date": 1731430980606,
-            "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-12-11-23-error.log",
-            "hash": "21a420d053b8f3536f917b43351555c91f7743255aa85f66238d925a625e1ae4"
-        },
-        {
-            "date": 1731437061249,
-            "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-13-11-00-error.log",
-            "hash": "b0a5d28fdb23c83e7e9f29314288ac9bfce08e368c4a3755ccb69947c2e1e118"
-        },
-        {
             "date": 1731496548908,
             "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-13-11-17-error.log",
             "hash": "3eef974ad5577be27672b6c5e0a0fedc29206e694a6355e76e536b62a91f7772"
@@ -64,6 +39,16 @@
             "date": 1731917571162,
             "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-18-11-14-error.log",
             "hash": "297a7be5d1faca13161b19017f976e89c68eef649ce363750d8d93615324c076"
+        },
+        {
+            "date": 1732347157158,
+            "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-23-11-13-error.log",
+            "hash": "9947a2e141ffd2afd2fde2763a4cc0448bf0a1844db94ceb369797acc6a259e7"
+        },
+        {
+            "date": 1732646735750,
+            "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-27-11-00-error.log",
+            "hash": "da26fea810402bdcd9e7550d92ead610293349d660e11c6070c830ec8533286f"
         }
     ],
     "hashType": "sha256"
