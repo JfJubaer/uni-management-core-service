@@ -327,6 +327,8 @@ const getMyRegistration = async (authUserId: string) => {
     return { semesterRegistration, studentSemesterRegistration }
 }
 
+//worked till here today 28/11/24
+
 export const SemesterRegistrationService = {
     insertIntoDB,
     getAllFromDB,

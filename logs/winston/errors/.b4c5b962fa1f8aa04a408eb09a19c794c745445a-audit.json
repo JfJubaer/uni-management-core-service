@@ -6,11 +6,6 @@
     "auditLog": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\.b4c5b962fa1f8aa04a408eb09a19c794c745445a-audit.json",
     "files": [
         {
-            "date": 1731496548908,
-            "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-13-11-17-error.log",
-            "hash": "3eef974ad5577be27672b6c5e0a0fedc29206e694a6355e76e536b62a91f7772"
-        },
-        {
             "date": 1731612823986,
             "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-15-11-01-error.log",
             "hash": "75e4ffb97148a527a78b28c56f8cfa53dd38fcc9906726d392517d35476ea17d"
@@ -49,6 +44,21 @@
             "date": 1732646735750,
             "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-27-11-00-error.log",
             "hash": "da26fea810402bdcd9e7550d92ead610293349d660e11c6070c830ec8533286f"
+        },
+        {
+            "date": 1732732573264,
+            "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-28-11-00-error.log",
+            "hash": "f4843dfb868fa94b08321d4a82ef507e05c0ab4b156ec46fffce93f9197bd3d7"
+        },
+        {
+            "date": 1732794879323,
+            "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-28-11-17-error.log",
+            "hash": "6c7d8903dcad4ed084db85bd29a30e356101f97dd7913ff05bed737d4b5ad832"
+        },
+        {
+            "date": 1732814052205,
+            "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-28-11-23-error.log",
+            "hash": "c1c932a05e71aecfdec60605c6f9cc2605d9759992d3651e612f0ffd912f134e"
         }
     ],
     "hashType": "sha256"
