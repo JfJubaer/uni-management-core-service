@@ -89,6 +89,8 @@ const updateStudentMarks = async (payload: any) => {
     console.log(payload)
 }
 
+//student marks update work here
+
 export const StudentEnrolledCourseMarkService = {
     createStudentEnrolledCourseDefaultMark,
     updateStudentMarks
