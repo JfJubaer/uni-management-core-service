@@ -464,8 +464,6 @@ const startNewSemester = async (
     }
 }
 
-//will work here today
-
 
 
 export const SemesterRegistrationService = {
@@ -480,4 +478,5 @@ export const SemesterRegistrationService = {
     confirmMyRegistration,
     getMyRegistration,
     startNewSemester
+    //1
 }

@@ -39,6 +39,16 @@
             "date": 1733156814882,
             "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-02-12-22-error.log",
             "hash": "892d3020ac77c890933e0c901d97b24ee0d463c8866613ee814094a21bf3701e"
+        },
+        {
+            "date": 1733224226949,
+            "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-03-12-17-error.log",
+            "hash": "43f2eea1ee553bb955302593586fbed1d828657d2173ebbdaa17a201671b0bb3"
+        },
+        {
+            "date": 1733227507226,
+            "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2024-03-12-18-error.log",
+            "hash": "e398bab311726870e38e9a57917873c4c9debedd0cdd8c5ff483b0b3385577de"
         }
     ],
     "hashType": "sha256"
