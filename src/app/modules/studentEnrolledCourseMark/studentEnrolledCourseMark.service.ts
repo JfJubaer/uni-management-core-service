@@ -256,7 +256,7 @@ const updateFinalMarks = async (payload: any) => {
             course: true
         }
     });
-F
+
     const academicResult = await StudentEnrolledCourseMarkUtils.calcCGPAandGrade(grades);
 
     const studentAcademicInfo = await prisma.studentAcademicInfo.findFirst({
