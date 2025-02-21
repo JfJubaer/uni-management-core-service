@@ -9,11 +9,8 @@ import prisma from "../../../shared/prisma"
 import { IStudentEnrolledCourseMarkFilterRequest } from "./studentEnrolledCourseMark.interface"
 import { StudentEnrolledCourseMarkUtils } from "./studentEnrolledCousreMark.utils"
 
-
 const createStudentEnrolledCourseDefaultMark = async (
-    prismaClient: Omit<PrismaClient<
-    PrismaClientOptions,
-     never, DefaultArgs>, "$connect" | "$disconnect" | "$on" | "$transaction" | "$use" | "$extends">,
+    prismaClient: Omit<PrismaClient<PrismaClientOptions, never, DefaultArgs>, "$connect" | "$disconnect" | "$on" | "$transaction" | "$use" | "$extends">,
     payload: {
         studentId: string,
         studentEnrolledCourseId: string,
