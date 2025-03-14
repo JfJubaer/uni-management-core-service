@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\Core-service\\logs\\winston\\successes\\.e45aba4516dee1eb08b38595e2a8560ecc3dd873-audit.json",
+    "files": [
+        {
+            "date": 1741941099680,
+            "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\Core-service\\logs\\winston\\successes\\phu-2025-14-03-14-success.log",
+            "hash": "feb1fde7ac49c96a990628cb91818da9c86e2bbd4b416439c5cf6bc2f41ed13a"
+        }
+    ],
+    "hashType": "sha256"
+}
