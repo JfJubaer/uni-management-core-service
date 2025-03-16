@@ -9,6 +9,11 @@
             "date": 1742082254700,
             "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\Core-service\\logs\\winston\\successes\\phu-2025-16-03-05-success.log",
             "hash": "4455c7530367a298175dc3f20e89264b099cd172534b40bd6da9cdfb1b84627f"
+        },
+        {
+            "date": 1742119037293,
+            "name": "C:\\Users\\Zubs\\Desktop\\Dev2.0\\mission-6\\Core-service\\logs\\winston\\successes\\phu-2025-16-03-15-success.log",
+            "hash": "9f76776cf4f76530fa2831f1fc5749143f5145ca4983b83bef80b7035fed0389"
         }
     ],
     "hashType": "sha256"
